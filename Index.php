@@ -102,19 +102,3 @@
 
 </html>
 
-hice esta modificacion gurde y se puso en naranja index.php
-
-si se pone naranja significa que es algo que esta pendiente de subir a gzwrite
-
-
-estamos hasta ahi?$_COOKIE
- session_is_registered
-
-
-
- primer comando 
-
- git add .
-
-
- 
