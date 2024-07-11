@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="Estilos.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-
 <body>
     <header>
         <nav>
@@ -30,11 +28,10 @@
     $ContactoEmail = "Timeroyal@gmail.com";
     $TelefonoContacto = "+123456789";
     $Localidad = "CABA";
-    $RedesSociales ="Instagram:RelojeriaTimeRoyal";
+    $RedesSociales = "Instagram: RelojeriaTimeRoyal";
     $contactoMensaje = "Contáctanos hoy mismo en $RedesSociales.";
 
-    define("CURRENT_YEAR", date("Y")); //constante
-
+    define("CURRENT_YEAR", date("Y")); 
     ?>
 
     <section id="home">
@@ -48,8 +45,7 @@
         <div class="container">
             <h2>Sobre Nosotros</h2>
             <p>Time Royal es una empresa dedicada a ofrecer lo último en relojes modernos para todas las ocasiones.
-                Nuestra colección incluye desde relojes tecnológicos y sofisticados hasta diseños vanguardistas y
-                deportivos.
+                Nuestra colección incluye desde relojes tecnológicos y sofisticados hasta diseños vanguardistas y deportivos.
                 Nuestro objetivo es brindar a nuestros clientes no solo un accesorio funcional, sino una declaración de
                 estilo que refleje su personalidad y gusto refinado.
                 Con una meticulosa atención al detalle y una selección cuidadosa de los mejores materiales y tecnologías.
@@ -74,9 +70,34 @@
                 </div>
                 <div class="product-item">
                     <img src="img/SmartW3.png" alt="Reloj Elegante Minimalista">
-                    <h3>Reloj  Minimalista</h3>
+                    <h3>Reloj Minimalista</h3>
                     <p>Malla Acero 9185 Resistente Al Agua.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div>
+                <?php
+                if (isset($_GET['ok'])) {
+                    echo '<h3>Mensaje enviado con éxito</h3>';
+                }
+                ?>
+                <form action="enviar_consulta.php" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                    
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email" required>
+                    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" required></textarea>
+                    
+                    <input type="submit" value="Enviar consulta">
+                </form>
             </div>
         </div>
     </section>
@@ -89,7 +110,6 @@
             <p>Dirección: <?php echo $Localidad; ?></p>
             <p><?php echo $RedesSociales; ?></p>
             <p><?php echo $contactoMensaje; ?></p>
-
         </div>
     </section>
 
@@ -98,7 +118,5 @@
             <p>&copy; <?php echo CURRENT_YEAR; ?> Time Royal. Todos los derechos reservados.</p>
         </div>
     </footer>
-</body> 
-
+</body>
 </html>
-
