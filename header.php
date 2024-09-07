@@ -22,8 +22,10 @@
                     <li><a href="index.php#home">Inicio</a></li>
                     <li><a href="index.php#about">Sobre Nosotros</a></li>
                     <li><a href="index.php#products">Productos</a></li>
-                    <li><a href="nuevoReloj.php">Cotizar Reloj</a></li>
-                    <li><a href="verMisRelojes.php">Mis relojes</a></li>
+                    <li><a href="nuevoReloj.php">Iniciar Sesion</a></li>
+                    <li><a href="verMisRelojes.php">Mis Relojes</a></li>
+                    <li><a href="pedidosFinalizados.php">Pedidos Finalizados</a></li>
+
                 </ul>
             </div>
         </nav>

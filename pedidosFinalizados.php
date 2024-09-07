@@ -9,7 +9,7 @@ if (!isset($_SESSION['admin'])) {
 }
 
 // Consulta para obtener los relojes
-$query = "SELECT * FROM relojes";
+$query = "SELECT * FROM relojes WHERE estado = 'Finalizado'";
 $relojes = mysqli_query($conexion, $query);
 ?>
 
